@@ -10,7 +10,7 @@ The image of this repo is pushed to: https://hub.docker.com/r/raniot/gettingstar
 - A raspberry pi with docker installed
 - The raspberry pi should be wired as shown below.
 
-**Obs: There is a change to the wiring from the image!!!**
+**Obs: There is a change to the wiring from the image!!!!**
 
 The wiring is setup using the text in the image, so the components are getting the correct voltage.
 
