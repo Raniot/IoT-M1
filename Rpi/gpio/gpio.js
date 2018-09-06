@@ -1,6 +1,8 @@
 var Gpio = require('onoff').Gpio;
 var DhtSensor = require('rpi-dht-sensor');
 var dht = new DhtSensor.DHT22(12);
+var ledstate = false;
+var pirval = 'Waiting for update';
 
 module.exports.ledOn = () => {
     var led = new Gpio(4, 'out');
@@ -11,8 +13,6 @@ module.exports.ledOff = () => {
     var led = new Gpio(4, 'out');
     led.writeSync(0);
 }
-
-var ledstate = false;
 
 module.exports.ledToggle = () => {
     var led = new Gpio(4, 'out');
@@ -27,19 +27,21 @@ module.exports.ledToggle = () => {
     }
 }
 
+module.exports.ledGetState = () => {
+    return ledstate;
+}
+
 module.exports.humidityRead = () => {
     var readout = dht.read();
     console.log('Humidity: ' + readout.humidity.toFixed(2));
-    return readout.humidity.toFixed(2) + '%';
+    return readout.humidity.toFixed(2);
 }
 
 module.exports.temperatureRead = () => {
     var readout = dht.read();
     console.log('Temp: ' + readout.temperature.toFixed(2));
-    return readout.temperature.toFixed(2) + 'C';
+    return readout.temperature.toFixed(2);
 }
-
-var pirval = 'Waiting for update';
 
 module.exports.pirRead = () => {
     var pir = new Gpio(17, 'in', 'both');
