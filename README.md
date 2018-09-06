@@ -21,6 +21,9 @@ The wiring is setup using the text in the image, so the components are getting t
 - docker run -p 3000:3000 raniot/gettingstarted:latest
 - Access http://localhost:3000
 
+#### To see the site on a raspberry:
+http://89.150.134.103:3000/ (The site is using dummy values for sensors)
+
 ## Milestone Description
 ### Milestone 1: Getting Started
 The purpose of this milestone is to get started with the Raspberry Pi, as well as your Docker and Node.js skills, if you are a little rusty.
