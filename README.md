@@ -20,9 +20,10 @@ The wiring is setup using the text in the image, so the components are getting t
 - docker pull raniot/inspectingadjusting:latest
 - docker run -p 3000:3000 raniot/gettingstarted:latest
 - Access http://localhost:3000
+OBS: Ifthis site is started on a windows machine it will show dummy values for sensors and actuators
 
 #### To see the site on a raspberry:
-http://89.150.134.103:3000/ (The site is using dummy values for sensors and actuators if started on a windows machine)
+http://89.150.134.103:3000/ (This raspberry does not have sensors attached)
 
 ## Milestone Description
 ### Milestone 1: Getting Started
