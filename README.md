@@ -22,7 +22,7 @@ The wiring is setup using the text in the image, so the components are getting t
 - Access http://localhost:3000
 
 #### To see the site on a raspberry:
-http://89.150.134.103:3000/ (The site is using dummy values for sensors)
+http://89.150.134.103:3000/ (The site is using dummy values for sensors and actuators if started on a windows machine)
 
 ## Milestone Description
 ### Milestone 1: Getting Started
